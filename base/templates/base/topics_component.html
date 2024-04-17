@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="topics">
     <div class="topics__header">
         <h2>Browse Topics</h2>
@@ -21,3 +22,15 @@
         </svg>
     </a>
 </div>
+=======
+<h3>Browse Topics</h3>
+<hr>
+<div>
+    <a href= '{% url "home" %}'> All </a>
+</div>
+{% for topic in topics %}
+    <div>
+        <a href= '{% url "home" %}?q={{topic.name}}'> {{topic.name}} </a>
+    </div>
+{% endfor %}
+>>>>>>> 3484baaddb60d1adf35712eb69ed156742d37cec
